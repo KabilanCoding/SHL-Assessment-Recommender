@@ -17,9 +17,10 @@ venv/
 .venv/
 env/
 
-# Data files (large, rebuilt on startup)
+# Data files — old local model embeddings excluded, gemini cache committed
 data/embeddings.npy
 data/embeddings_v2.npy
+# data/embeddings_gemini.npy  ← committed so Render skips the API call on startup
 
 # The catalog JSON is downloaded automatically — optional to include
 # data/shl_catalog.json
